@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIME</title>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body onload="onload();">
+    <h1>AIME Problem Counter</h1>
+    <p>Whassup Reece! Today is <span id="date"></span>. You will solve <span id="number"></span> AIME problems.</p>
+    <p>You've solved <span id="done">0</span> problems today. Change number of problems done:</p>
+    <form onsubmit="var problems = document.getElementById('problem-box').value;
+    localStorage.setItem(getDateString(), getNumber() + ' ' + problems);
+    document.getElementById('done').innerHTML = problems;">
+        <input id="problem-box" type="text" placeholder="over 9000">
+    </form>
+    <div id="reward">
+    </div>
+    <div id="statistics">
+        <h3>Statistics</h3>
+    </div>
+    <div id="history">
+        <h3>History</h3>
+    </div>
+</body>
+</html>
