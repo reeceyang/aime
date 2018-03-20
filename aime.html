@@ -2,15 +2,13 @@
 <html>
 <head>
     <title>AIME</title>
-    <script src="scripts/scripts.js"></script>
 </head>
-<body onload="onload();">
+<body>
     <h1>AIME Problem Counter</h1>
-    <p>Whassup Reece! Today is <span id="date"></span>. You will solve <span id="number"></span> AIME problems.</p>
-    <p>You've solved <span id="done">0</span> problems today. Change number of problems done:</p>
+    <p>Hello <span id="name"></span>. How are you? Today is <span id="date"></span>. You will solve <span id="number"></span>.</p>
+    <p>You've solved <span id="done">0 problems</span> today. Change number of problems done today:</p>
     <form onsubmit="var problems = document.getElementById('problem-box').value;
-    localStorage.setItem(getDateString(), getNumber() + ' ' + problems);
-    document.getElementById('done').innerHTML = problems;">
+    localStorage.setItem(getNumericalDate(), getNumber() + ' ' + problems);">
         <input id="problem-box" type="text" placeholder="over 9000">
     </form>
     <div id="reward">
@@ -18,8 +16,11 @@
     <div id="statistics">
         <h3>Statistics</h3>
     </div>
+    <h3>History</h3>
     <div id="history">
-        <h3>History</h3>
     </div>
 </body>
 </html>
+
+<script src="scripts/scripts.js"></script>
+<script src="scripts/problem.js"></script>
