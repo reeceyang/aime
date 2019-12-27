@@ -1,4 +1,6 @@
 # AIME Challenger
+**December 2019 Update: I've converted this into a tool that presents a daily random AIME problem.**
+
 This project is like Art of Probleming Solving's MathCounts Trainer (https://artofproblemsolving.com/mathcounts_trainer) but for AIME problems. Ideally the end result will have a similar interface, and will allow login using Facebook and Google to store user statistics.
 
 Currently, functions in problem.js are able to get any AIME problem and solution off the AoPS wiki (https://artofproblemsolving.com/wiki/index.php?title=Main_Page). There are still some bugs, as entries in the wiki are somewhat inconsistent. Next steps include creating a system to display a problem and to accept an answer.
