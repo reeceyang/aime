@@ -99,6 +99,8 @@ function onload() {
     var stats = document.getElementById("statistics");
     stats.innerHTML += "Total Done: " + totalDone + "<br>" + "Total Possible: "
         + totalPossible + "<br>" + "Grade: " + 100 * totalDone / totalPossible + "%";
+
+    getDailyProblem();
 }
 
 // submit

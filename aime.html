@@ -4,8 +4,20 @@
     <title>AIME</title>
 </head>
 <body>
+    <h1>AIME Problem of The Day</h1>
+    <div id="problem-title-box">
+    </div>
+    <div id="problem-box">
+    </div>
+    <div id="problem-url-box">
+    </div>
+    <div id="solution-box">
+    </div>
+    <!--form onsubmit="">
+        <input id="answer-box" type="text">
+    </form-->
     <h1>AIME Problem Counter</h1>
-    <p>Hello <span id="name"></span>. How are you? Today is <span id="date"></span>. You will solve <span id="number"></span>.</p>
+    <p>Hello <span id="name"></span>. How are you? Today is <span id="date"></span>. Today's goal is to solve <span id="number"></span>.</p>
     <p>You've solved <span id="done">0 problems</span> today. Change number of problems done today:</p>
     <form onsubmit="var problems = document.getElementById('problem-box').value;
     localStorage.setItem(getNumericalDate(), getNumber() + ' ' + problems);">
@@ -22,5 +34,5 @@
 </body>
 </html>
 
-<script src="scripts/scripts.js"></script>
 <script src="scripts/problem.js"></script>
+<script src="scripts/scripts.js"></script>
