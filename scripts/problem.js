@@ -48,7 +48,7 @@ function getWebpage(year, test, problem)
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             processHTML(xmlHttp.responseText, year, test, problem);
     }
-    xmlHttp.open("GET", "https://cors-anywhere.herokuapp.com/" + theUrl, true); // true for asynchronous
+    xmlHttp.open("GET", "https://cors.reeceyang.workers.dev/" + theUrl, true); // true for asynchronous
     xmlHttp.send(null);
 }
 
